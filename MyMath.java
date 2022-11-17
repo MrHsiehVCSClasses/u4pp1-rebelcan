@@ -41,15 +41,21 @@ public class MyMath {
         // }
         // return -1;
         
+        if (x<0){
+            return -1;
+        }
+        else if (x<2){
+            return x;
+        }
+        else {
         for (int i = 1; i <= x; i++){
-            if (x % i==0){
                 if (i * i == x){
                     return i;
                 }
             }
-        }
-        return -1;
         
+        return -1;
+        }
     
     }
 } 
