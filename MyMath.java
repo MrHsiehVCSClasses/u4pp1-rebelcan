@@ -1,5 +1,5 @@
 package u4pp;
-
+//can multiply x with -1 to change every number into positive
 public class MyMath {
     public static int abs(int x){
         if (x < 0){
@@ -21,6 +21,7 @@ public class MyMath {
         }
         return answer;
     }
+    //separates cases when i=0 and i=1
     public static int perfectSqrt(int x){
             // int i = 0;   
             // while (i * i != x){
