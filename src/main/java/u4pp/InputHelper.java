@@ -30,8 +30,22 @@ public class InputHelper {
         Boolean valid = String.equals("Y");  String.equals("y");  String.equals("n");
                  String.equals("N");
         return valid;
-    }
-
+        
+        **
+     public boolean getYesNoInput(String prompt){
+        System.out.println(prompt);
+        String s = scanner.nextLine();
+        char c = s.charAt(0);
+        
+        if (c == 'y' || c == 'Y' || c == 'n' || c == 'N'){
+            return valid;
+        else {
+            System.out.println("That's not a valid input!");
+        }
+        
+        
+    
+**
     public int getIntegerInput(String prompt, int min, int max) {
         int number;
         do {
