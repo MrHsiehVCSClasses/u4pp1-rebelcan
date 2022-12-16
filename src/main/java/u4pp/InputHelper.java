@@ -22,30 +22,31 @@ public class InputHelper {
         this.scanner = scanner;
     }
 
-    public boolean getYesNoInput(String prompt) {
-        System.out.println(prompt);
-        String userInput = this.scanner.next();
-        char firstChar = userInput.charAt(0);
-        String String = "" + firstChar;
-        Boolean valid = String.equals("Y");  String.equals("y");  String.equals("n");
-                 String.equals("N");
-        return valid;
+//     public boolean getYesNoInput(String prompt) {
+//         System.out.println(prompt);
+//         String userInput = this.scanner.next();
+//         char firstChar = userInput.charAt(0);
+//         String String = "" + firstChar;
+//         Boolean valid = String.equals("Y");  String.equals("y");  String.equals("n");
+//                  String.equals("N");
+//         return valid;
         
-        **
-     public boolean getYesNoInput(String prompt){
+ 
+    public boolean getYesNoInput(String prompt){
         System.out.println(prompt);
         String s = scanner.nextLine();
         char c = s.charAt(0);
+        Boolean valid = s.equals("Y");  s.equals("y");  s.equals("n");
+                 s.equals("N");
         
-        if (c == 'y' || c == 'Y' || c == 'n' || c == 'N'){
-            return valid;
-        else {
+        while (c != 'y' || c != 'Y' || c != 'n' || c != 'N'){
             System.out.println("That's not a valid input!");
         }
+        return valid;
         
         
     
-**
+
     public int getIntegerInput(String prompt, int min, int max) {
         int number;
         do {
