@@ -1,6 +1,7 @@
 package u4pp;
 
 public class MyMath {
+    //multiplying -1 to undo any negative value
     public static int abs(int x){
         if (x < 0){
             x *= -1;
@@ -8,12 +9,14 @@ public class MyMath {
         return x;
     }
     public static double abs(double x){
+        //same thing as above
         if (x < 0){
             x *= -1;
         }
         return x;
     }
     public static double pow(double base, int exponent){
+        //gets answer and multiples it by base
         double answer = 1;
         while (exponent != 0){
             answer = answer * base;
