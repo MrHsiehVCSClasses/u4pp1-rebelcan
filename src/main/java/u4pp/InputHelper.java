@@ -31,7 +31,7 @@ public class InputHelper {
 //                  String.equals("N");
 //         return valid;
         
- 
+//loops through each time user inputs to check if it's y, Y, n, N
     public boolean getYesNoInput(String prompt){
         System.out.println(prompt);
         String s = scanner.nextLine();
@@ -46,7 +46,7 @@ public class InputHelper {
         
         
     
-
+//makes sure input number is within bounds
     public int getIntegerInput(String prompt, int min, int max) {
         int number;
         do {
